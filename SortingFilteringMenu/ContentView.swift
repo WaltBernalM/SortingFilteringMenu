@@ -71,7 +71,7 @@ struct ContentView: View {
     
     
     func buildPredicate() -> NSPredicate {
-        NSPredicate()
+        return NSPredicate(value: true)
     }
     
     
