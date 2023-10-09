@@ -17,6 +17,10 @@
 		41A511392936351400297C3D /* Customer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A511382936351400297C3D /* Customer+extension.swift */; };
 		41EF5E52292F99C90023590C /* PlaceHolderDessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EF5E51292F99C90023590C /* PlaceHolderDessert.swift */; };
 		41EF5E54292FA95D0023590C /* Dessert+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EF5E53292FA95D0023590C /* Dessert+extension.swift */; };
+		DA73616D2AD3D8FE00227631 /* Customer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73616B2AD3D8FE00227631 /* Customer+CoreDataClass.swift */; };
+		DA73616E2AD3D8FE00227631 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73616C2AD3D8FE00227631 /* Customer+CoreDataProperties.swift */; };
+		DA7361712AD3DCFD00227631 /* Dessert+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73616F2AD3DCFC00227631 /* Dessert+CoreDataClass.swift */; };
+		DA7361722AD3DCFD00227631 /* Dessert+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7361702AD3DCFD00227631 /* Dessert+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		41A511382936351400297C3D /* Customer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+extension.swift"; sourceTree = "<group>"; };
 		41EF5E51292F99C90023590C /* PlaceHolderDessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderDessert.swift; sourceTree = "<group>"; };
 		41EF5E53292FA95D0023590C /* Dessert+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dessert+extension.swift"; sourceTree = "<group>"; };
+		DA73616B2AD3D8FE00227631 /* Customer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA73616C2AD3D8FE00227631 /* Customer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA73616F2AD3DCFC00227631 /* Dessert+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dessert+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA7361702AD3DCFD00227631 /* Dessert+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dessert+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +75,15 @@
 				417BF3FC2923854A00AA4CC2 /* ContentView.swift */,
 				41EF5E51292F99C90023590C /* PlaceHolderDessert.swift */,
 				417BF3FE2923854B00AA4CC2 /* Assets.xcassets */,
-				417BF4032923854B00AA4CC2 /* Persistence.swift */,
 				417BF40D2923864600AA4CC2 /* SortingFilteringMenu.xcdatamodeld */,
+				417BF4032923854B00AA4CC2 /* Persistence.swift */,
 				41EF5E53292FA95D0023590C /* Dessert+extension.swift */,
 				41A511382936351400297C3D /* Customer+extension.swift */,
 				419393C02931049B00D63FE3 /* FetchedObjects.swift */,
+				DA73616B2AD3D8FE00227631 /* Customer+CoreDataClass.swift */,
+				DA73616C2AD3D8FE00227631 /* Customer+CoreDataProperties.swift */,
+				DA73616F2AD3DCFC00227631 /* Dessert+CoreDataClass.swift */,
+				DA7361702AD3DCFD00227631 /* Dessert+CoreDataProperties.swift */,
 				417BF4002923854B00AA4CC2 /* Preview Content */,
 			);
 			path = SortingFilteringMenu;
@@ -155,9 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7361722AD3DCFD00227631 /* Dessert+CoreDataProperties.swift in Sources */,
 				41EF5E54292FA95D0023590C /* Dessert+extension.swift in Sources */,
+				DA73616E2AD3D8FE00227631 /* Customer+CoreDataProperties.swift in Sources */,
 				41EF5E52292F99C90023590C /* PlaceHolderDessert.swift in Sources */,
 				417BF4042923854B00AA4CC2 /* Persistence.swift in Sources */,
+				DA7361712AD3DCFD00227631 /* Dessert+CoreDataClass.swift in Sources */,
+				DA73616D2AD3D8FE00227631 /* Customer+CoreDataClass.swift in Sources */,
 				417BF40F2923864600AA4CC2 /* SortingFilteringMenu.xcdatamodeld in Sources */,
 				417BF3FD2923854A00AA4CC2 /* ContentView.swift in Sources */,
 				41A511392936351400297C3D /* Customer+extension.swift in Sources */,
