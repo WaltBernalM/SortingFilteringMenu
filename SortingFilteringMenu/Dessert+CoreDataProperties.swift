@@ -12,9 +12,19 @@ import CoreData
 
 extension Dessert {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Dessert> {
-        return NSFetchRequest<Dessert>(entityName: "Dessert")
-    }
+    //    @nonobjc public class func fetchRequest() -> NSFetchRequest<Dish> {
+    //        return NSFetchRequest<Dish>(entityName: "Dish")
+    //    }
+        private static func request() -> NSFetchRequest<NSFetchRequestResult> {
+            let request: NSFetchRequest<NSFetchRequestResult> =
+                NSFetchRequest(entityName: String(describing: Self.self))
+            /// Creates the request to remove duplicates from the results.
+            request.returnsDistinctResults = true
+            /// Forces the result to be faults (small objectsfetvched into memory only as needed).
+            /// Faulting mechanism is designed to enhance performance and reduce memory use.
+            request.returnsObjectsAsFaults = true
+            return request
+        }
 
     @NSManaged public var name: String?
     @NSManaged public var price: Float
