@@ -43,7 +43,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
+                    // This adds a search bar at the top of the NavigationView.
                     .searchable(text: $searchText,
                                 prompt: "search...")
                 }
@@ -71,7 +71,11 @@ struct ContentView: View {
     
     
     func buildPredicate() -> NSPredicate {
-        return NSPredicate(value: true)
+        if searchText.count > 0 {
+            return NSPredicate(format: "name CONTAINS[cd] %@", searchText)
+        } else {
+            return NSPredicate(value: true) // Means no filtering
+        }
     }
     
     
