@@ -79,7 +79,18 @@ struct ContentView: View {
     
     
     func buildSortDescriptors() -> [NSSortDescriptor] {
-        return [ NSSortDescriptor( key: sortBy.rawValue, ascending: true) ]
+        return [ 
+            NSSortDescriptor( 
+                key: "name",
+                ascending: true,
+                selector: #selector(NSString.localizedCaseInsensitiveCompare)
+            ),
+            NSSortDescriptor( 
+                key: "size",
+                ascending: false,
+                selector: #selector(NSString.localizedStandardCompare)
+            )
+        ]
     }
     
 }
