@@ -73,14 +73,13 @@ struct ContentView: View {
     func buildPredicate() -> NSPredicate {
         if searchText.count > 0 {
             return NSPredicate(format: "name CONTAINS[cd] %@", searchText)
-        } else {
-            return NSPredicate(value: true) // Means no filtering
         }
+        return NSPredicate(value: true) // Means no filtering
     }
     
     
     func buildSortDescriptors() -> [NSSortDescriptor] {
-        []
+        return [ NSSortDescriptor( key: sortBy.rawValue, ascending: true) ]
     }
     
 }
